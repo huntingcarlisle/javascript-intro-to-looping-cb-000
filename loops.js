@@ -18,13 +18,13 @@ function whileLoop(num) {
 }
 
 function doWhileLoop(arr) {
-  let count = 0;
+  var i = 0;
+  function incrementVariable() {
+  return i++;
+  }
   do {
     console.log("I run once regardless.")
     arr.pop()
-  } while (incrementVariable(count) <= arr.length)
+  } while (incrementVariable() <= arr.length)
 };
 
-function incrementVariable(i) {
-  return i++;
-}
