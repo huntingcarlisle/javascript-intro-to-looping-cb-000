@@ -26,5 +26,6 @@ function doWhileLoop(arr) {
     console.log("I run once regardless.")
     arr.pop()
   } while (incrementVariable() <= arr.length)
+  return arr;
 };
 
